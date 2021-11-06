@@ -41,6 +41,10 @@ public class RecipeController {
 
         return "recipe/recipeform";
     }
+     @GetMapping("/about")
+    public String showAbout() {
+    	return "recipe/about";
+    }
 
     @GetMapping("recipe/{id}/update")
     public String updateRecipe(@PathVariable String id, Model model){
